@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- code here -->
+        <div class="card">
+            <div class="card-image">	
+                <h2 class="card-heading">
+                    
+                    <small>View your child daily status</small>
+                </h2>
+            </div>
+            <form class="card-form">
+                <div class="input">
+                    <input type="text" class="input-field" placeholder="Student ID" required/>
+                    
+                </div>
+                            <div class="input">
+                    <select class="input-field"  required>
+                        <option value="Select Standard">Select Standard</option>
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                        <option value="III">III</option>
+                        <option value="IV">IV</option>
+                        <option value="V">V</option>
+                        <option value="VI">VI</option>
+                        <option value="VII">VII</option>
+                        <option value="VIII">VIII</option>
+                        <option value="IX">IX</option>
+                        <option value="X">X</option>
+                    </select>
+                    
+                </div>
+                <div class="action">
+                    <button class="action-button" id="submitBtn">Login</button>
+                </div>
+            </form>
+            <div class="card-info">
+                <p>By signing up you are agreeing to our <a href="#">Terms and Conditions</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let submitBtn = document.getElementById("submitBtn");
+        submitBtn.addEventListener('click',()=>{
+            location.replace("analytics.html");
+        })
+    </script>
+</body>
+</html>
